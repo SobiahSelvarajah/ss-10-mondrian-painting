@@ -4,35 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mondrian Painting 2</title>
+    <style>
+        body {
+            height: 9rem;
+            width: 8.2rem;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: repeat(7, 1rem) repeat(2, 0.5rem);
+            grid-template-columns: repeat(7, 1rem) 0.5rem ;
+            background-color: black;
+            gap: 0.1rem;
+        }
+        .card {
+            background-color: lightgray;
+        }
+        .grey1 {
+            grid-column: span 2;
+        }
+        .grey2 {
+            grid-column: span 3;
+        }
+        .yellow1 {
+            grid-column: span 2;
+            background-color: yellow;
+        }
+        .grey3 {
+            grid-area: 1 / 8 / 2 / 8.5;
+        }
+        .grey4 {
+            grid-area: 2 / 1 / 4 / 2;
+
+        }
+        .red {
+            grid-area: 2 / 2 / 6 / 6;
+            background-color: red;
+        }
+        .yellow2 {
+            grid-area: 2 / 6 / 4 / 8;
+            background-color: yellow;
+        }
+        .grey5 {
+            grid-row: span 5;
+        }
+        .grey6 {
+            grid-row: span 3;
+        }
+        .grey7,
+        .grey8 {
+            grid-row: span 2;
+        }
+        .black1 {
+            grid-area: 6 / 2 / 8 / 4;
+            background-color: black;
+        }
+        .grey9,
+        .grey10,
+        .grey11 {
+            grid-column: span 2;
+        }
+        .yellow3 {
+            grid-row: span 3;
+            background-color: yellow;
+        }
+        .blue {
+            grid-area: 7 / 6 / 9 / 8;
+            background-color: darkblue;
+        }
+        .coral {
+            grid-row: span 3;
+            background-color: coral;
+        }
+        .grey12 {
+            grid-area: 8 / 2 / 10 / 4;
+        }
+        .black2 {
+            grid-column: span 2;
+            background-color: black;
+        }
+        .grey13 {
+            grid-column: span 4;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="card grey"></div>
-        <div class="card grey"></div>
-        <div class="card yellow"></div>
-        <div class="card grey"></div>
+        <div class="card grey1"></div>
+        <div class="card grey2"></div>
+        <div class="card yellow1"></div>
+        <div class="card grey3"></div>
 
-        <div class="card grey"></div>
+        <div class="card grey4"></div>
         <div class="card red"></div>
-        <div class="card yellow"></div>
-        <div class="card grey"></div>
+        <div class="card yellow2"></div>
+        <div class="card grey5"></div>
 
-        <div class="card grey"></div>
-        <div class="card grey"></div>
-        <div class="card grey"></div>
+        <div class="card grey6"></div>
+        <div class="card grey7"></div>
+        <div class="card grey8"></div>
 
-        <div class="card black"></div>
-        <div class="card grey"></div>
-        <div class="card grey"></div>
+        <div class="card black1"></div>
+        <div class="card grey9"></div>
+        <div class="card grey10"></div>
 
-        <div class="card yellow"></div>
-        <div class="card grey"></div>
+        <div class="card yellow3"></div>
+        <div class="card grey11"></div>
         <div class="card blue"></div>
         <div class="card coral"></div>
 
-        <div class="card grey"></div>
-        <div class="card black"></div>
-        <div class="card grey"></div>
+        <div class="card grey12"></div>
+        <div class="card black2"></div>
+        <div class="card grey13"></div>
     </div>
 </body>
 </html>
